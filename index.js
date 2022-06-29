@@ -9,7 +9,9 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: true })); // Conseguir receber um POST
 
 server.get ('/', (req, res) => {
-    res.send('Está funcionando')
+
+    const idade = 28;
+    res.send({ nome: "Daniel", sobrenome: "Sarmento"});
 })
 
 server.listen(PORT, () => {
