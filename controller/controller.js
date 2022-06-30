@@ -11,6 +11,6 @@ exports.getAluno = async (req, res) => {
             res.status(500).send({ error: err.message });
           }
     } else {
-        return res.send({erro:'Insira um número de matrícula válido!'})
+        return res.send({erro:true})
     }
     };
