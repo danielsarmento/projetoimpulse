@@ -11,6 +11,6 @@ exports.getAluno = async (req, res) => {
             res.status(500).send({ error: err.message });
           }
     } else {
-        return res.send({erro:true})
+        return res.send({erro:'true'})
     }
     };
